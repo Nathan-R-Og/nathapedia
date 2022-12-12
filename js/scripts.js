@@ -64,3 +64,7 @@ function intwrap(num, limit) {
     }
     return num;
 }
+function hideOnClick(){
+    "use strict";
+    console.log("lol");
+}
