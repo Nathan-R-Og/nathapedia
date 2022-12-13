@@ -200,6 +200,13 @@
                         <p>The “<i>Half Pixel!</i>” chant was created during or after the creation of the logo animation and name. The cadence and lyrics of the chant are directly inspired by companies such as <a href="https://en.wikipedia.org/wiki/Sega">Sega</a>. The chant always has the same timings for the notes, but different pitches per spokesperson. The speaker for the chant is usually on a media to media basis, using the voices for the characters in that specific media. For instance, in Panic Machine, Machine, Beta, and other characters relevant to the story according to your save file will perform the chant every time the game is launched.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
                         <audio controls src="" id="player1"></audio>
                         <p class="quote" id="player12"> performing the chant.</p>
+                        <script>
+                            var examples = ["Machine.wav", "Dibloblo.wav", "Deta.wav", "Beta.wav"]
+                            var get = randomPick(examples)
+                            console.log("entry/" + get)
+                            document.getElementById("player1").setAttribute("src", "entry/" + get)
+                            document.getElementById("player12").innerHTML = get.replace(".wav", "") + document.getElementById("player12").innerHTML
+                        </script>
                         <br2 style="margin:0.99%"></br2>
 					<h2 id="Presented">Media Presented By</h2>
                         <p>This is a list of media that has the Half Pixel branding attached to it. This does not include things Nathan has worked on adjacent.</p>
@@ -453,12 +460,6 @@
             if(result.length > 4){Refs.splice(0, 0, result[4])}
             console.log(Refs)
             guys[1].innerHTML = '—<span class="quoteSRCName">' + result[1] + '</span>' + result[2] + '<sup id="cite_ref-1" class="reference">' + result[3] + '</sup>'
-        </script>
-        <script>
-            var examples = ["Machine.wav", "Dibloblo.wav", "Deta.wav", "Beta.wav"]
-            var get = randomPick(examples)
-            document.getElementById("player1").setAttribute("src", "entry/" + get)
-            document.getElementById("player12").innerHTML = get.replace(".wav", "") + document.getElementById("player12").innerHTML
         </script>
         <script>
             refGen()
